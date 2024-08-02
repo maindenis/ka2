@@ -58,14 +58,14 @@ $(document).ready(function() {
                 whileScrolling: function(){
                   console.log("start  " + parseInt($('body .mCSB_container').css('top')));
                   start = parseInt($('body .mCSB_container').css('top'));
-                  // setTimeout(function() {
+                  setTimeout(function() {
                     if(start < end) {
                       $(".wrapper").addClass("bottom");
                     } else {
                       $(".wrapper").removeClass("bottom");
                     }
                     console.log(start +"  "+ end);
-                  // }, 200);
+                  }, 200);
                 }
               }
             });
